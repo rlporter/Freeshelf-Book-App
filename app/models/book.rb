@@ -1,3 +1,3 @@
 class Book < ApplicationRecord
-  validates :title, :author, :description, :url, presence: true
+  validates :title, :author, presence: true
 end
