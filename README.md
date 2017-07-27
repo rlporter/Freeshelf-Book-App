@@ -27,10 +27,10 @@ During this project, you will build a Ruby on Rails application to collect an in
 
 1) look at the index (show),DONE
 2) add new books (create),DONE
-3) edit books they added (update),
-4) and remove books (destroy).
+3) edit books they added (update),DONE
+4) and remove books (destroy).DONE
 
-DAY ONE TODOs:
+DAY ONE TODOs: DONE
 On the first day, your application should:
 
 1)Allow anyone to create a new book entry
@@ -39,6 +39,11 @@ On the first day, your application should:
 2)Allow anyone to update or delete a book entry
 3)Allow anyone to view the list of books
 
+DAY TWO TODOs:
+On the second day, your application should:
+
+Allow users to register and login
+Prevent users from creating, editing, or deleting book entries if they are not logged in
 
 Added features  
 
