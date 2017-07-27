@@ -22,5 +22,11 @@
               data: { confirm: "Are you sure?"} %></td>
     </tr>
   <% end %>
-  <%= link_to 'New book', new_book_path %>
+
 </table>
+<br />
+<p>
+  <%= link_to 'Home', root_path %> |
+  <%= link_to 'New book', new_book_path %> |
+  <%= link_to 'Login', new_session_path %>
+</p>

@@ -2,31 +2,33 @@ class UsersController < ApplicationController
 
   before_action :authenticate_user!
 
-  # def index
-  #   @orders = @current_user.orders
+  def index
+  end
+
+  def show
+    @user = @current_user.find(params[:user_id])
+  end
 
   def new
     @user = User.new
   end
 
   def create
-    User.create(user_params)
+    @user = User.new(user_params)
     if @user.save
-      flash[:notice] = "You've been registered!"
-      flash[:color]= 'valid'
+      session[:user_id] = @user_id
+      redirect_to :home, notice: 'Account created successfully'
     else
-      flash[:notice] = 'Invalid form'
-      flash[:color]= 'invalid'
+      flash[:error] = 'An error occurred!'
+      render 'new'
     end
-    render 'new'
   end
-end
 
 private
 
   def authenticate_user!
     unless user_signed_in?
-      redirect_to sign_in_path
+      redirect_to new_session_path
     end
   end
 

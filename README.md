@@ -45,6 +45,12 @@ On the second day, your application should:
 Allow users to register and login
 Prevent users from creating, editing, or deleting book entries if they are not logged in
 
+DAY THREE TODOs:
+On the third day (today), your application should:
+
+Associate each book entry with a user
+Prevent editing a book unless you are the book entry's creator
+Prevent deleting a book unless you are the book entry's creator
 Added features  
 
 If you finish all of the above, consider some of the following:
